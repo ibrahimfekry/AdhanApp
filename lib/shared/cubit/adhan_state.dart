@@ -8,3 +8,6 @@ class CoordinateErrorState extends AdhanState{}
 
 class CoordinateLoadingState extends AdhanState{}
 
+class AzkarLoadingState extends AdhanState{}
+class AzkarSuccessState extends AdhanState{}
+class AzkarErrorState extends AdhanState{}

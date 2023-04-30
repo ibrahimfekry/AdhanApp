@@ -40,7 +40,23 @@ dependencies:
   intl: ^0.18.0
   flutter_bloc: ^8.1.2
   hexcolor: ^3.0.1
+  http: ^0.13.5
+  shared_preferences: ^2.1.0
+  smooth_page_indicator: ^1.1.0
+  flutter_native_splash: ^2.2.19
+  flutter_screenutil: ^5.7.0
 
+
+flutter_native_splash:
+#  color: "#70294F"
+  background_image: assets/images/praying_times.jpg
+  image: assets/images/adhan_logo.png
+#  branding: assets/images/praying_times.jpg
+  android_12:
+    color: "#70294F"
+    image: assets/images/adhan_logo-removebg-preview.png
+    background_image: assets/images/praying_times.jpg
+    background_image_android: "assets/images/praying_times.jpg"
 
 
 dev_dependencies:

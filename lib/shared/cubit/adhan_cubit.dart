@@ -1,8 +1,10 @@
+
 import 'package:adhan/adhan.dart';
-import 'package:adhan_app/cubit/adhan_state.dart';
+import 'package:adhan_app/shared/cubit/adhan_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import 'package:location/location.dart';
+
 
 class AdhanCubit extends Cubit<AdhanState> {
   AdhanCubit() : super(AdhanInitialState());
@@ -11,7 +13,6 @@ class AdhanCubit extends Cubit<AdhanState> {
   Location location = Location();
   String? locationError;
   PrayerTimes? prayerTimes;
-
   Future<LocationData?> getLocationData() async {
     LocationData newLocation;
     var serviceEnabled = await location.serviceEnabled();
@@ -45,7 +46,6 @@ class AdhanCubit extends Cubit<AdhanState> {
       emit(CoordinateSuccessState());
     }).catchError((error) {
       locationError = "Couldn't Get Your Location!";
-      print(error);
       emit(CoordinateErrorState());
     });
   }
@@ -67,4 +67,5 @@ class AdhanCubit extends Cubit<AdhanState> {
     'Maghrib Time: ${DateFormat.jm().format(prayerTimes!.maghrib)}',
     'Isha Time: ${DateFormat.jm().format(prayerTimes!.isha)}',
   ];
+
 }
