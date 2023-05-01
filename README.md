@@ -4,12 +4,17 @@
 <img src="https://user-images.githubusercontent.com/124194866/235448634-3cf4d82f-0ce4-446f-9b56-300f77655fca.png" width="150" height="150" /></div>
 <br> <font size="10">Muslim is the holy book of islam</font><br>The app shows the praying times based on your location <br> The app shows The holy Quran<br/>
 
+**The app saves The Quran Image you stopped reading before closing and returns to the same image when starts the app again**
 
 
 **Used Tools ::** <br>
 *Flutter Cubit<br>
 *Responsivness Screen<br>
 *Shared Preferences<br>
+*Restful Api<br>
+*Onboarding screen<br>
+*Http Package<br>
+
 
 **Screen Shots**
 
