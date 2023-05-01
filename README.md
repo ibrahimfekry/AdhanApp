@@ -1,5 +1,5 @@
 <div align="center">
-<font size ="20">**# Muslim App **</font> </div>
+<font size ="20">**# Muslim App ** </div></font>
 <div align="center">
 <img src="https://user-images.githubusercontent.com/124194866/235448634-3cf4d82f-0ce4-446f-9b56-300f77655fca.png" width="100" height="100" /></div>
 
