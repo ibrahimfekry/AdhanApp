@@ -3,6 +3,7 @@
 <div align="center">
 <img src="https://user-images.githubusercontent.com/124194866/235448634-3cf4d82f-0ce4-446f-9b56-300f77655fca.png" width="150" height="150" /></div>
 <br> <font size="10">Muslim is the holy book of islam</font><br>The app shows the praying times based on your location <br> The app shows The holy Quran<br/>
+And The Hadith
 <br><br>
 
 
@@ -17,8 +18,10 @@
 *Responsivness Screen<br><br>
 *Shared Preferences<br><br>
 *Restful Api<br><br>
-*Onboarding screen<br>>br>
 *Http Package<br><br>
+*Onboarding screen<br><br>
+*Splash Screen <br><br>
+
 
 
 **Screen Shots**
