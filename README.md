@@ -5,8 +5,9 @@
 <br> <font size="10">Muslim is the holy book of islam</font><br>The app shows the praying times based on your location <br> The app shows The holy Quran<br/>
 <br><br>
 **The app saves The Quran Image you stopped reading before closing and returns to the same image when starts the app again**
-
-
+<br><br>
+**The app Has an Onboarding screen that starts the first time you open the app to show some information about the app and dosn't appear again **
+<br><br>
 **Used Tools ::** <br>
 *Flutter Cubit<br>
 *Responsivness Screen<br>
