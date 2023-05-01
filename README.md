@@ -4,6 +4,8 @@
 <img src="https://user-images.githubusercontent.com/124194866/235448634-3cf4d82f-0ce4-446f-9b56-300f77655fca.png" width="150" height="150" /></div>
 <br> <font size="10">Muslim is the holy book of islam</font><br>it shows the praying times based on your location <br>
 
+#ScreenShots
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
