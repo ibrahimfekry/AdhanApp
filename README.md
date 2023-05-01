@@ -2,7 +2,7 @@
 <h1 align="center"> Muslim App <br></h1>
 <div align="center">
 <img src="https://user-images.githubusercontent.com/124194866/235448634-3cf4d82f-0ce4-446f-9b56-300f77655fca.png" width="150" height="150" /></div>
-<br> Muslim is the holy book of islam
+<br> <font size="3">**Muslim is the holy book of islam</font>
 
 ## Getting Started
 
