@@ -12,13 +12,13 @@
 
 **The app Has an Onboarding screen that starts the first time you open the app to show some information about the app and dosn't appear again**
 <br><br>
-**Used Tools ::** <br>
-*Flutter Cubit<br>
-*Responsivness Screen<br>
-*Shared Preferences<br>
-*Restful Api<br>
-*Onboarding screen<br>
-*Http Package<br>
+**Used Tools ::** <br><br>
+*Flutter Cubit<br><br>
+*Responsivness Screen<br><br>
+*Shared Preferences<br><br>
+*Restful Api<br><br>
+*Onboarding screen<br>>br>
+*Http Package<br><br>
 
 
 **Screen Shots**
