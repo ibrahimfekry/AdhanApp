@@ -1,10 +1,10 @@
 import 'package:adhan_app/shared/constants/colors.dart';
-import 'package:adhan_app/shared/cubit/adhan_cubit.dart';
+import 'package:adhan_app/shared/cubit/adhan_cubit/adhan_cubit.dart';
+import 'package:adhan_app/shared/cubit/adhan_cubit/adhan_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../shared/components/component.dart';
-import '../../shared/cubit/adhan_state.dart';
 
 
 class PrayingTimesPage extends StatelessWidget {
@@ -50,18 +50,18 @@ class PrayingTimesPage extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(
-                                    width: 30.w,
+                                    width: 15.w,
                                   ),
                                   Text(
                                     'Prayer Times for Today',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
-                                        fontSize: 20.sp, color: whiteColor),
+                                        fontSize: 15.sp, color: whiteColor),
                                   ),
                                   Image(
                                       image: const AssetImage(
                                           'assets/images/lantern.png'),
-                                      height: 110.h),
+                                      height: 100.h),
                                 ],
                               ),
                             ),
@@ -85,7 +85,7 @@ class PrayingTimesPage extends StatelessWidget {
                                         dataFormat: cubit.prayingTimes[index],
                                         image: AssetImage(
                                             cubit.imagePaths[index]),
-                                      ))),
+                                  ))),
                         ],
                       ),
                     ),

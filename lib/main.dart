@@ -5,13 +5,12 @@ import 'package:adhan_app/modules/intro_screen/intro_screen.dart';
 import 'package:adhan_app/modules/onboarding_screen/onboarding_screen.dart';
 import 'package:adhan_app/modules/quran_images_screen/quran_images_screen.dart';
 import 'package:adhan_app/shared/constants/colors.dart';
-import 'package:adhan_app/shared/cubit/adhan_cubit.dart';
-import 'package:adhan_app/shared/cubit/hadith_cubit.dart';
+import 'package:adhan_app/shared/cubit/adhan_cubit/adhan_cubit.dart';
+import 'package:adhan_app/shared/cubit/hadith_cubit/hadith_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
@@ -35,7 +34,7 @@ class MyApp extends StatelessWidget {
       designSize: const Size(360,690),
       minTextAdapt: true,
       splitScreenMode: true,
-      builder: (BuildContext context, Widget? child) {
+      builder: (context , child) {
       return MultiBlocProvider(
         providers: [
           BlocProvider(create: (context) => AdhanCubit()..getData()),
@@ -59,7 +58,7 @@ class MyApp extends StatelessWidget {
                 statusBarColor: whiteColor,
                 statusBarIconBrightness: Brightness.dark,
               ))),
-          initialRoute: showHome ? OnBoardingPage.id : IntroPage.id,
+          initialRoute: showHome ? IntroPage.id : OnBoardingPage.id,
         ),
       );
     });

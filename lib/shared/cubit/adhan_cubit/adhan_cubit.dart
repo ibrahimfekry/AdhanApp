@@ -1,6 +1,6 @@
 
 import 'package:adhan/adhan.dart';
-import 'package:adhan_app/shared/cubit/adhan_state.dart';
+import 'package:adhan_app/shared/cubit/adhan_cubit/adhan_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import 'package:location/location.dart';

@@ -43,7 +43,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
               color: blueColor,
               urlImage: 'assets/images/praying_man.png',
               title: 'مسلم',
-              subtitle:'تطبيق مسلم عبارة عن تطبيق اسلامى يحتوى على مواقيت الصلاة الخاصة بموقعك الجغرافى ويحتوى ايضا على القران الكريم كاملا',
+              subtitle:'  تطبيق مسلم عبارة عن تطبيق اسلامى يحتوى على مواقيت الصلاة الخاصة بموقعك الجغرافى ويحتوى ايضا على القران الكريم كاملا و مجموعة من الاحاديث',
             ),
             buildPage(
                 color: whiteColor,
@@ -52,8 +52,8 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                 subtitle:'تطبيق مسلم يظهر لك مواقيت الصلاة'
             ),
             buildPage(
-                color: whiteColor,
-                urlImage: 'assets/images/hadith.jpg',
+                color:whiteColor ,
+                urlImage: 'assets/images/theHolyQuran.png',
                 title:'مسلم',
                 subtitle:'تطبيق مسلم يحتوى على المصحف كاملا'
             ),
@@ -66,7 +66,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
         onPressed: ()async{
           final prefs = await SharedPreferences.getInstance();
           prefs.setBool('showHome', true  );
-          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const IntroPage()));
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>IntroPage()));
         },
         style: TextButton.styleFrom(shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20.r),

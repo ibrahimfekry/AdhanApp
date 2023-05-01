@@ -28,8 +28,6 @@ class _QuranImagesState extends State<QuranImages> {
 
   @override
   Widget build(BuildContext context) {
-    getDataFromShared();
-        if(pageIndex != 0){
           return Scaffold(
             appBar: AppBar(
               backgroundColor: HexColor('C0E2CA'),
@@ -46,8 +44,8 @@ class _QuranImagesState extends State<QuranImages> {
               ),
               onPageChanged: (value){
                 setState(() {
-                  index = value;
-                  CacheHelper.savaData(key: Constants.sharedIndex.toString(), value: index);
+                    pageIndex = value+1;
+                  CacheHelper.savaData(key: Constants.sharedIndex.toString(), value: pageIndex);
                 });
               },
               itemBuilder: (context, index) => Image(
@@ -56,35 +54,5 @@ class _QuranImagesState extends State<QuranImages> {
               itemCount: 604,
             ),
           );
-        }
-        else{
-          return Scaffold(
-            appBar: AppBar(
-              backgroundColor: HexColor('C0E2CA'),
-              elevation: 0,
-              systemOverlayStyle: const SystemUiOverlayStyle(
-                  statusBarIconBrightness: Brightness.dark,
-                  statusBarColor: Colors.transparent
-              ),
-            ),
-            backgroundColor: greenColor,
-            body: PageView.builder(
-              controller: PageController(
-                initialPage: pageIndex,
-              ),
-              onPageChanged: (value){
-                setState(() {
-                  index = value;
-                  CacheHelper.savaData(key: Constants.sharedIndex.toString(), value: index);
-                });
-              },
-              itemBuilder: (context, index) => const Image(
-                  fit: BoxFit.fill,
-                  image: NetworkImage('https://ayah.nawafdev.com/api/quran/images/${1}')),
-              itemCount: 604,
-            ),
-          );
-        }
-
   }
 }

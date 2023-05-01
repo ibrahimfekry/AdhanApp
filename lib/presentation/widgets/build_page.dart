@@ -14,13 +14,13 @@ Widget buildPage({
       Image.asset(
         urlImage,
         width: double.infinity,
-        height: 500.h,
+        height: 370.h,
         fit: BoxFit.fill,
       ),
       const SizedBox(height: 30,),
       Text(title,style: TextStyle(
         color:Colors.teal,
-        fontSize: 30.sp,
+        fontSize: 22.sp,
         fontWeight: FontWeight.bold,
       ),),
        SizedBox(height: 15.h,),
@@ -29,7 +29,7 @@ Widget buildPage({
         child: Text(
           textDirection: TextDirection.rtl,
           subtitle,
-          style: TextStyle(color: Colors.black,fontSize: 18.sp),
+          style: TextStyle(color: Colors.black,fontSize: 17.sp,fontWeight: FontWeight.w700),
         ),
       ),
     ],
