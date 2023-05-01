@@ -1,7 +1,7 @@
 # Muslim App 
 
 Muslim app shows the praying times based on your location and The holy quran and The hadith
-![appstore](https://user-images.githubusercontent.com/124194866/235448634-3cf4d82f-0ce4-446f-9b56-300f77655fca.png =250x250)
+![appstore](https://user-images.githubusercontent.com/124194866/235448634-3cf4d82f-0ce4-446f-9b56-300f77655fca.png | width=100)
 
 
 ## Getting Started
