@@ -1,6 +1,30 @@
-# adhan_app
 
-A new Flutter project.
+<h1 align="center"> Muslim App <br></h1>
+<div align="center">
+<img src="https://user-images.githubusercontent.com/124194866/235448634-3cf4d82f-0ce4-446f-9b56-300f77655fca.png" width="150" height="150" /></div>
+<br> <font size="10">Muslim is the holy book of islam</font><br>The app shows the praying times based on your location <br> The app shows The holy Quran<br/>
+And The Hadith
+<br><br>
+
+
+**The app saves The Quran Image you stopped reading before closing and returns to the same image when starts the app again**
+<br><br>
+
+
+**The app Has an Onboarding screen that starts the first time you open the app to show some information about the app and dosn't appear again**
+<br><br>
+**Used Tools ::** <br><br>
+*Flutter Cubit<br><br>
+*Responsivness Screen<br><br>
+*Shared Preferences<br><br>
+*Restful Api<br><br>
+*Http Package<br><br>
+*Onboarding screen<br><br>
+*Splash Screen <br><br>
+
+
+
+**Screen Shots**
 
 ## Getting Started
 
