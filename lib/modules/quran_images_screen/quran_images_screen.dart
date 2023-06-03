@@ -1,6 +1,7 @@
 import 'package:adhan_app/cache_helper.dart';
 import 'package:adhan_app/shared/constants/colors.dart';
 import 'package:adhan_app/shared/constants/constants.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -48,9 +49,10 @@ class _QuranImagesState extends State<QuranImages> {
                   CacheHelper.savaData(key: Constants.sharedIndex.toString(), value: pageIndex);
                 });
               },
-              itemBuilder: (context, index) => Image(
-                  fit: BoxFit.fill,
-                  image: NetworkImage('https://ayah.nawafdev.com/api/quran/images/$pageIndex')),
+              itemBuilder: (context, index) => CachedNetworkImage(
+                imageUrl: 'https://ayah.nawafdev.com/api/quran/images/$pageIndex',
+                  placeholder: (context,url)=> const Center(child: Text('Loading',style: TextStyle(fontSize: 16),)),
+                  fit: BoxFit.fill,),
               itemCount: 604,
             ),
           );
