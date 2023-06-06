@@ -6,6 +6,7 @@
 And The Hadith
 <br><br>
 
+Google Play Link ::: https://play.google.com/store/apps/details?id=com.IFLap.adhan_app
 
 **The app saves The Quran Image you stopped reading before closing and returns to the same image when starts the app again**
 <br><br>
